@@ -13,6 +13,13 @@ collections:
     slug: "home"
     extension: "json"
     fields: # The fields for each document, usually in front matter
-      - {label: "Page title", name: "title", widget: "string", default: "This is a title"}
+      - {label: "Page title", name: "title", widget: "string"}
       - {label: "Paragraph", name: "text", widget: "string"}
       - {label: "Featured Image", name: "image", widget: "image"}
+  - name: "aboutPage"
+    label: "About page"
+    folder: "/content"
+    slug: "about"
+    extension: "json"
+    fields:
+      - {label: "Page title", name: "title", widget: "string"}
