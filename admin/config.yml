@@ -9,7 +9,8 @@ media_folder: "static/images/"
 collections:
   - name: "homepageContent"
     label: "Homepage Content"
-    file: "content/home.json"
+    folder: "/content"
+    slug: "home"
     extension: "json"
     fields: # The fields for each document, usually in front matter
       - {label: "Page title", name: "title", widget: "string", default: "This is a title"}
