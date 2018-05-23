@@ -7,19 +7,20 @@ publish_mode: editorial_workflow
 media_folder: "static/images/"
 
 collections:
-  - name: "homepageContent"
-    label: "Homepage Content"
-    folder: "/content"
-    slug: "home"
-    extension: "json"
-    fields: # The fields for each document, usually in front matter
-      - {label: "Page title", name: "title", widget: "string"}
-      - {label: "Paragraph", name: "text", widget: "string"}
-      - {label: "Featured Image", name: "image", widget: "image"}
-  - name: "aboutPage"
-    label: "About page"
-    folder: "/content"
-    slug: "about"
-    extension: "json"
-    fields:
-      - {label: "Page title", name: "title", widget: "string"}
+  - label: "Pages"
+    name: "pages"
+    files:
+      - label: "About Page"
+        name: "about"
+        file: "content/about.json"
+        extension: "json"
+        fields:
+          - {label: "Page title", name: "title", widget: "string"}
+      - label: "Homepage"
+        name: "homepage"
+        file: "content/home.json"
+        extension: "json"
+        fields:
+          - {label: "Page title", name: "title", widget: "string"}
+          - {label: "Paragraph", name: "text", widget: "string"}
+          - {label: "Featured Image", name: "image", widget: "image"}
